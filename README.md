@@ -12,10 +12,11 @@ The game concept is a 'Graphic Novel'-ish game on which you play as someone who 
 
 
 ## HOW TO PLAY
-1) Make sure you have Python installed and updated.
-2) Go to ```/Kodland_Python/``` and run ``` pip install -r requirements.txt```
-3) Move to ```/src/code/``` and run ```python main.py```
-4) Use **space** to navigate the game and type the answers.
+1) Download the game files by using this command ``` git clone https://github.com/sirBaggins/Python_test ```
+2) Make sure you have Python installed and updated.
+3) Go to ```/Kodland_Python/``` and run ``` pip install -r requirements.txt```
+4) Move to ```/src/code/``` and run ```python main.py```
+5) Use **space** to navigate the game and type the answers.
 
 
 ## KNOWN ISSUES>
