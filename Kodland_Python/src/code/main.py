@@ -4,6 +4,7 @@ import pygame
 # internal imports
 from settings import *
 from helpers import *
+from dialogs import *
 
 # class imports
 from scenes import Scenes
@@ -17,27 +18,39 @@ def main():
     timer = pygame.time.Clock()
 
     scene:Scenes = Scenes(screen=screen)
+    keyboard_free:bool = True # prevents double input
 
-    scene_counter:int = 0
     #### GAME LOOP ####
     while (game_running):
-        timer.tick(FPS)
-        
-        scene.render(current_scene(scene_counter))
+
+        scene.render(current_scene(scene.scene_counter))
 
         ## EVENT HANDLER ##
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 game_running = False
 
-            if (current_scene(scene_counter) == "menu"):
+            if (event.type == pygame.KEYUP) and (event.key == pygame.K_SPACE):
+                keyboard_free = True
+
+            if (current_scene(scene.scene_counter) == "menu"):
                 if (event.type == pygame.KEYDOWN) and (event.key == pygame.K_SPACE):
-                    scene_counter = set_scene("play")
+                    keyboard_free = False
+                    scene.scene_counter = set_scene("play")
+
+            if (current_scene(scene.scene_counter) == "play"):
+                if (event.type == pygame.KEYDOWN) and (event.key == pygame.K_SPACE) and (keyboard_free):
+                    if scene.animation_index < (len(DIALOG_INTRO) - 1):
+                        scene.animation_index += 1
+                    else:
+                        scene.animation_index = 0
+                        scene.scene_counter = set_scene("level_one")
 
         ####################
 
 
         pygame.display.flip()
+        timer.tick(FPS)
     #### END LOOP ####
 
     pygame.quit()

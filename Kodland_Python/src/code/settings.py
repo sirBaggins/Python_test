@@ -30,9 +30,8 @@ FONT_MAIN_HUGE:font.Font = font.Font(FONT_ANNIE_PATH, 50)
 # IMAGES
     # BACKGROUNDS
 MENU_MAIN_BG:str = "../graphics/Backgrounds/menu_main_background.png"
-    # BUTTONS
-BTN_PLAY_0:str = "../graphics/GUI/btn_play_0.png"
-BTN_PLAY_1:str = "../graphics/GUI/btn_play_1.png"
+MAIN_SCENE_BACKGROUND:str = "../graphics/Backgrounds/scene_background.jpg"
+
 
 # CONSTANTS
 TOPLEFT:tuple = (0, 0)
