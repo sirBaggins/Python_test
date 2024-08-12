@@ -49,13 +49,13 @@ Yet I am not the moment, but a way to endow.
 I capture the essence of what’s happening today,
 In a form that can linger and never decay.
 What am I?  
-(a record)
+(record)
 
 3) I am the moment that you’re living right now,  
 Unseen yet experienced, a gift and a vow.  
 I am fleeting and constant, always in view,  
 What am I, that’s both old and new?  
-(the present) 
+(present) 
 
 
 ## Level 3 - The future
@@ -64,17 +64,17 @@ An endless road where dreams reside.
 With every step, I shift and change,  
 Yet in one place, I always remain.  
 What am I, guiding every stride?  
-(the horizon)
+(horizon)
 
 2) I hold the keys to what’s ahead,  
 Though you can’t see me, I'm often read.  
 I map your hopes, your fears, your plans,  
 But in my pages, nothing stands.  
 What am I, that shapes your days?  
-(the calendar)  
+(calendar)  
 
 3) I am a shadow that never leaves,  
 A path unknown that time weaves.  
 I hold secrets yet to be seen,  
 What am I, where dreams convene?  
-(the future)
+(future)
